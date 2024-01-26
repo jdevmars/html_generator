@@ -258,7 +258,7 @@ public class Ftp_2 {
 		final String SERVER = "ftp.mpsilvestri.com";
 		final int PORT = 21;
 		final String USER = "java@images.mpsilvestri.com";
-		final String PASS = "M@arcosP@aulo01";
+		final String PASS = "";
 		
 		FTPClient ftpClient = new FTPClient();
 		InputStream inputStream = null;
@@ -293,15 +293,15 @@ public class Ftp_2 {
 		            
 		            inputStream.close();
 	            
-	            } else { // se n„o encontrar ao menos 1 algarismo em nome de arquivo
+	            } else { // se n√£o encontrar ao menos 1 algarismo em nome de arquivo
 	            	
-	            	// n„o importe o arquivo caso ele n„o contenha "html" no nome
-	            	if (!listOfFiles[i].getName().contains("html")) { // se n„o tiver algarismo e n„o conter "html"
+	            	// n√£o importe o arquivo caso ele n√£o contenha "html" no nome
+	            	if (!listOfFiles[i].getName().contains("html")) { // se n√£o tiver algarismo e n√£o conter "html"
 	            		System.out.println("\n"+ listOfFiles[i].getName() + " is not being imported!");
 	            	}
 	            	
 	            	// captura o arquivo html ready
-	            	if (listOfFiles[i].getName().contains("html") && listOfFiles[i].getName().contains("ready")) { // se n„o conter algarismo, e se for o html ready
+	            	if (listOfFiles[i].getName().contains("html") && listOfFiles[i].getName().contains("ready")) { // se n√£o conter algarismo, e se for o html ready
 	            		String remoteFile = "/"+listOfFiles[i].getName();
 	                    
 	    	            inputStream = new FileInputStream(listOfFiles[i]);
@@ -369,13 +369,13 @@ public class Ftp_2 {
 			}
 	}
 	
-	// ser· chamado por cada mÈtodo upload abaixo
+	// ser√° chamado por cada m√©todo upload abaixo
 	public FTPClient connect_accor() {
 		
 		String SERVER = "expertsenderbrasil.com.br";
         int PORT = 21;
         String USER = "accor@expertsenderbrasil.com.br";
-        String PASS = "accor@2018";
+        String PASS = "";
         
         FTPClient ftpClient = new FTPClient();
         
@@ -431,16 +431,16 @@ public class Ftp_2 {
 	            
 	            
             
-            } else { // se n„o encontrar ao menos 1 algarismo em nome de arquivo
+            } else { // se n√£o encontrar ao menos 1 algarismo em nome de arquivo
             	
-            	// n„o importe o arquivo caso ele n„o contenha "html" no nome
-            	if (!listOfFiles[i].getName().contains("html")) { // se n„o tiver algarismo e n„o conter "html"
+            	// n√£o importe o arquivo caso ele n√£o contenha "html" no nome
+            	if (!listOfFiles[i].getName().contains("html")) { // se n√£o tiver algarismo e n√£o conter "html"
             		System.out.println("\n"+ listOfFiles[i].getName() + " is not being imported!");
             		continue;
             	}
             	
             	// captura o arquivo html ready
-            	if (listOfFiles[i].getName().contains("html") && listOfFiles[i].getName().contains("ready")) { // se n„o conter algarismo, e se for o html ready
+            	if (listOfFiles[i].getName().contains("html") && listOfFiles[i].getName().contains("ready")) { // se n√£o conter algarismo, e se for o html ready
             		
             		//String remoteFile = "/"+listOfFiles[i].getName();
             		String remoteFile = "accorhotels/"+year+"/"+"day_"+day+"_"+month+"_hour_"+hour+"_"+minute+"/"+listOfFiles[i].getName();	
@@ -543,16 +543,16 @@ public class Ftp_2 {
 	           	 System.out.println("*** There has been a problem with the folder upload. Probably the destination folder does not exist. ***");
 	            }
             
-            } else { // se n„o encontrar ao menos 1 algarismo em nome de arquivo
+            } else { // se n√£o encontrar ao menos 1 algarismo em nome de arquivo
             	
-            	// n„o importe o arquivo caso ele n„o contenha "html" no nome
-            	if (!listOfFiles[i].getName().contains("html")) { // se n„o tiver algarismo e n„o conter "html"
+            	// n√£o importe o arquivo caso ele n√£o contenha "html" no nome
+            	if (!listOfFiles[i].getName().contains("html")) { // se n√£o tiver algarismo e n√£o conter "html"
             		System.out.println("\n"+ listOfFiles[i].getName() + " is not being imported!");
             		continue;
             	}
             	
             	// captura o arquivo html ready
-            	if (listOfFiles[i].getName().contains("html") && listOfFiles[i].getName().contains("ready")) { // se n„o conter algarismo, e se for o html ready
+            	if (listOfFiles[i].getName().contains("html") && listOfFiles[i].getName().contains("ready")) { // se n√£o conter algarismo, e se for o html ready
             		
             		//String remoteFile = "/"+listOfFiles[i].getName();
             		String remoteFile = "accormail/"+year+"/"+"day_"+day+"_"+month+"_hour_"+hour+"_"+minute+"/"+listOfFiles[i].getName();	
@@ -655,16 +655,16 @@ public class Ftp_2 {
 		           	 System.out.println("*** There has been a problem with the folder upload. Probably the destination folder does not exist. ***");
 		            }
 	            
-	            } else { // se n„o encontrar ao menos 1 algarismo em nome de arquivo
+	            } else { // se n√£o encontrar ao menos 1 algarismo em nome de arquivo
 	            	
-	            	// n„o importe o arquivo caso ele n„o contenha "html" no nome
-	            	if (!listOfFiles[i].getName().contains("html")) { // se n„o tiver algarismo e n„o conter "html"
+	            	// n√£o importe o arquivo caso ele n√£o contenha "html" no nome
+	            	if (!listOfFiles[i].getName().contains("html")) { // se n√£o tiver algarismo e n√£o conter "html"
 	            		System.out.println("\n"+ listOfFiles[i].getName() + " is not being imported!");
 	            		continue;
 	            	}
 	            	
 	            	// captura o arquivo html ready
-	            	if (listOfFiles[i].getName().contains("html") && listOfFiles[i].getName().contains("ready")) { // se n„o conter algarismo, e se for o html ready
+	            	if (listOfFiles[i].getName().contains("html") && listOfFiles[i].getName().contains("ready")) { // se n√£o conter algarismo, e se for o html ready
 	            		
 	            		//String remoteFile = "/"+listOfFiles[i].getName();
 	            		String remoteFile = "pullmanspibirapuera/"+year+"/"+"day_"+day+"_"+month+"_hour_"+hour+"_"+minute+"/"+listOfFiles[i].getName();	
@@ -734,13 +734,13 @@ public class Ftp_2 {
 		
 	}
 	
-	// mÈtodo que conecta e faz upload (sÛ tem uma opÁ„o de conex„o)
+	// m√©todo que conecta e faz upload (s√≥ tem uma op√ß√£o de conex√£o)
 	public void connect_upload_adcos(String html) {
 		
 		final String SERVER = "expertsenderbrasil.com.br";
 		final int PORT = 21;
 		final String USER = "adcos@expertsenderbrasil.com.br";
-		final String PASS = "Adcos@2021";
+		final String PASS = "";
 		
 		
 		FTPClient ftpClient = new FTPClient();
@@ -781,16 +781,16 @@ public class Ftp_2 {
 		           	 System.out.println("*** There has been a problem with the folder upload. Probably the destination folder does not exist. ***");
 		            }
 	            
-	            } else { // se n„o encontrar ao menos 1 algarismo em nome de arquivo
+	            } else { // se n√£o encontrar ao menos 1 algarismo em nome de arquivo
 	            	
-	            	// n„o importe o arquivo caso ele n„o contenha "html" no nome
-	            	if (!listOfFiles[i].getName().contains("html")) { // se n„o tiver algarismo e n„o conter "html"
+	            	// n√£o importe o arquivo caso ele n√£o contenha "html" no nome
+	            	if (!listOfFiles[i].getName().contains("html")) { // se n√£o tiver algarismo e n√£o conter "html"
 	            		System.out.println("\n"+ listOfFiles[i].getName() + " is not being imported!");
 	            		continue;
 	            	}
 	            	
 	            	// captura o arquivo html ready
-	            	if (listOfFiles[i].getName().contains("html") && listOfFiles[i].getName().contains("ready")) { // se n„o conter algarismo, e se for o html ready
+	            	if (listOfFiles[i].getName().contains("html") && listOfFiles[i].getName().contains("ready")) { // se n√£o conter algarismo, e se for o html ready
 	            		
 	            		//String remoteFile = "/"+listOfFiles[i].getName();
 	            		String remoteFile = "/"+project+"/"+year+"/"+"day_"+day+"_"+month+"_hour_"+hour+"_"+minute+"/"+listOfFiles[i].getName();	
