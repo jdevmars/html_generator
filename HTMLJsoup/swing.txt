@@ -1,0 +1,11 @@
+https://coderanch.com/t/770649/java/Guidance-start-project-cropping-images
+
+https://coderanch.com/t/508783/java/Crop-Image
+
+https://coderanch.com/t/700111/java/crop-image-mouse-JAVA-swing
+
+https://jcrop.com/examples/
+
+https://cppsecrets.com/users/20251211111031011151049910497110100114971079711011610455565764103109971051084699111109/C00-OpenCV-CROP-image-.php
+
+https://www.life2coding.com/cropping-the-image-using-mouse-callbacks-opencv-c/
