@@ -39,13 +39,13 @@ public class Ftp {
     	String server = "expertsenderbrasil.com.br";
         int port = 21;
         String user = "accor@expertsenderbrasil.com.br";
-        String pass = "accor@2018";
+        String pass = "";
         */
     	
     	String server = "ftp.mpsilvestri.com";
         int port = 21;
         String user = "java@images.mpsilvestri.com";
-        String pass = "M@arcosP@aulo01";
+        String pass = "";
         
         String current_folder = System.getProperty("user.dir");
 
@@ -179,13 +179,13 @@ public class Ftp {
 	        	            
 	        	            inputStream.close();
         	            
-        	            } else { // se n„o encontrar ao menos 1 algarismo em nome de arquivo
+        	            } else { // se n√£o encontrar ao menos 1 algarismo em nome de arquivo
         	            	
-        	            	if (!listOfFiles[i].getName().contains("html")) { // se n„o tiver algarismo e n„o conter "html"
+        	            	if (!listOfFiles[i].getName().contains("html")) { // se n√£o tiver algarismo e n√£o conter "html"
         	            		System.out.println("\n"+ listOfFiles[i].getName() + " is not being imported!");
         	            	}
         	            	
-        	            	if (listOfFiles[i].getName().contains("html") && !listOfFiles[i].getName().contains("ftp")) { // se n„o conter algarismo e nem conter "ftp", porÈm conter "html"
+        	            	if (listOfFiles[i].getName().contains("html") && !listOfFiles[i].getName().contains("ftp")) { // se n√£o conter algarismo e nem conter "ftp", por√©m conter "html"
         	            		
         	            		//File message_ftp = new File(System.getProperty("user.dir")+"\\message.html");
         	                    //FileUtils.copyFile(original, copied);
@@ -227,7 +227,7 @@ public class Ftp {
         	            		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(new File(System.getProperty("user.dir")+"\\message.html"))));
         	            		String line;
         	            		String current_path = "file:///" + System.getProperty("user.dir") + "\\";
-        	                    while ((line = br.readLine()) != null) { // => consegui alterar cada linha com replace, porÈm falta salvar o arquivo com essas alteraÁıes
+        	                    while ((line = br.readLine()) != null) { // => consegui alterar cada linha com replace, por√©m falta salvar o arquivo com essas altera√ß√µes
         	                        if (line.contains(current_path)) {
         	                        	System.out.println("Before Replace: " + line);
         	                        	line = line.replace(current_path, "/Java/FTP/");
@@ -259,7 +259,7 @@ public class Ftp {
         	            		/*
         	            		FileWriter myWriter = new FileWriter(System.getProperty("user.dir")+"\\message_ftp.html");
         	            		// html.replace("file:///" + System.getProperty("user.dir"), "/Java/FTP/");
-        	            		html = html.replace(html.substring(html.indexOf("file"), html.lastIndexOf("\"")), "/Java/FTP/"); // ===> trocar tudo entre src=" e \, est· trocando errado
+        	            		html = html.replace(html.substring(html.indexOf("file"), html.lastIndexOf("\"")), "/Java/FTP/"); // ===> trocar tudo entre src=" e \, est√° trocando errado
         	            		myWriter.write(html);
         	            		myWriter.close();
         	            		*/
@@ -353,7 +353,7 @@ public class Ftp {
     		String line;
     		String current_path = "file:///" + System.getProperty("user.dir") + "\\";
     		
-    		while ((line = br.readLine()) != null) { // => consegui alterar cada linha com replace, porÈm falta salvar o arquivo com essas alteraÁıes
+    		while ((line = br.readLine()) != null) { // => consegui alterar cada linha com replace, por√©m falta salvar o arquivo com essas altera√ß√µes
                 if (line.contains(current_path)) {
                 	System.out.println("Before Replace: " + line);
                 	line = line.replace(current_path, "/Java/FTP/");
